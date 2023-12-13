@@ -5,33 +5,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chatbot Interface</title>
+    <title>Chatbox</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .chatbox {
+            max-width: 400px;
+            margin: 50px auto;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .chatbox-header {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .chatbox-body {
+            max-height: 300px;
+            overflow-y: auto;
+            padding: 10px;
+            background-color: #fff;
+        }
+
+        .message {
+            margin-bottom: 10px;
+        }
+
+        .user-message {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 8px;
+            border-radius: 4px;
+            float: right;
+        }
+
+        .other-message {
+            background-color: #ccc;
+            padding: 8px;
+            border-radius: 4px;
+            float: left;
+        }
+
+        .input-container {
+            padding: 10px;
+            background-color: #f4f4f4;
+        }
+
+        .input-container input {
+            width: 70%;
+            padding: 8px;
+            margin-right: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            outline: none;
+        }
+
+        .input-container button {
+            padding: 8px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-    <h1>Chatbot Interface</h1>
-    <form id="userInputForm">
-        <label for="user_input">Enter your message:</label>
-        <input type="text" id="user_input" name="user_input" required>
-        <button type="Send Message">Submit</button>
-    </form>
 
-    <div id="chatbotResponse"></div>
+<div class="chatbox">
+    <div class="chatbox-header">Chatbox</div>
+    <div class="chatbox-body" id="chatbox-body">
+        <!-- Chat messages will be displayed here -->
+    </div>
+    <div class="input-container">
+        <input type="text" id="messageInput" placeholder="Type your message">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+</div>
 
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('#userInputForm').submit(function (event) {
-                event.preventDefault();
-                processUserInput();
-            });
+<script>
+    function sendMessage() {
+        var messageInput = document.getElementById('messageInput');
+        var chatboxBody = document.getElementById('chatbox-body');
 
-            function processUserInput() {
-                var userInput = $('#user_input').val();
-                $.post('/process_input', { 'user_input': userInput }, function (data) {
-                    $('#chatbotResponse').text(data.response);
-                });
-            }
-        });
-    </script>
+        if (messageInput.value.trim() !== '') {
+            var message = document.createElement('div');
+            message.className = 'message user-message';
+            message.innerHTML = messageInput.value;
+            chatboxBody.appendChild(message);
+            messageInput.value = '';
+
+            // Simulate a response (you might want to replace this with actual server communication)
+            setTimeout(function () {
+                var response = document.createElement('div');
+                response.className = 'message other-message';
+                response.innerHTML = 'This is a sample response.';
+                chatboxBody.appendChild(response);
+                chatboxBody.scrollTop = chatboxBody.scrollHeight; // Auto-scroll to the latest message
+            }, 1000);
+        }
+    }
+</script>
+
 </body>
 </html>

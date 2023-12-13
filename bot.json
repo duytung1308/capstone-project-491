@@ -1,0 +1,196 @@
+{
+  "questions": [
+    {
+      "question": "hi",
+      "answer": "hello"
+    },
+    {
+      "question": "hello",
+      "answer": "hi"
+    },
+    {
+      "question": "what's your name?",
+      "answer": "My name is Peter the chatbot"
+    },
+    {
+      "question": "hello",
+      "answer": "hello"
+    },
+    {
+      "question": "what is my name",
+      "answer": "Your name is '  ' "
+    },
+    {
+      "question": "hello",
+      "answer": "hi"
+    },
+    {
+      "question": "what is your name?",
+      "answer": "My name is Peter the chatbot"
+    },
+    {
+      "question": "Hi",
+      "answer": "hello"
+    },
+    {
+      "question": "hi",
+      "answer": "python -u \"c:\\Users\\duytu\\Downloads\\json_chatbot-master\\json_chatbot-master\\main.py\""
+    },
+    {
+      "question": "how are you?",
+      "answer": "I'm fine thank you!"
+    },
+    {
+      "question": "hi",
+      "answer": "I'm fine thank you!"
+    },
+    {
+      "question": "what's up",
+      "answer": "I'm fine thank you!"
+    },
+    {
+      "question": "what is your name?",
+      "answer": "I'm fine thank you!"
+    },
+    {
+      "question": "do you know my name?",
+      "answer": "I'm sorry, I'm not equipped to remember individual's name"
+    },
+    {
+      "question": "greeting",
+      "answer": "Greeting! How are you today?"
+    },
+    {
+      "question": "I'm fine thank you for asking",
+      "answer": "Great! How can I help you today?"
+    },
+    {
+      "question": "What is Moore's Law",
+      "answer": "Moore's Law is a famous law that states that the number of transistors in a given integrated circuit doubles approximately every two years. This law is named after Gorden Moore, who first proposed it in 1965."
+    },
+    {
+      "question": "Do you know Moore's Law?",
+      "answer": "Moore's Law is a famous law that states that the number of transistors in a given integrated circuit doubles approximately every two years. This law is named after Gorden Moore, who first proposed it in 1965."
+    },
+    {
+      "question": "What is bits?",
+      "answer": "Bit is the smallest data item in a computer can assume the value 0 or the value 1. A bit is the smallest unit of information that can be stored in a computer."
+    },
+    {
+      "question": "What is characters?",
+      "answer": "Digits, letters and special symbols are known as characters. C supports varios character sets including Unicode"
+    },
+    {
+      "question": "What is fields",
+      "answer": "Fields are composed of characters or bytes, Fields is a group of characters or bytes that conveys meaning. For example, a field consisting of uppercase and lowercsae leters can e used to represent a person's name."
+    },
+    {
+      "question": "What is an interpreter",
+      "answer": "Developed to execute high-level language programs directly, avoid the delay of compilation, although they run slower than compiled programs."
+    },
+    {
+      "question": "Why do interpreters run slower than compiled programs?",
+      "answer": " Interpreters execute code line by line, translating each statement into machine code or an intermediate representation at runtime. This continuous translation process incurs overhead, making the execution slower, while compiled programs are translated into machine code before execution, allows compilers to perform optimizations and produce more efficient code, contributing to faster execution."
+    },
+    {
+      "question": "What is machine language",
+      "answer": "Defined by its hardware design. Machine languages generally consist of strings of numebrs (ultimately reduced to 1s and 0s). Machine languages are machine dependent, and are not portable."
+    },
+    {
+      "question": "Why did we use assmebly language over machine language?",
+      "answer": "Programming in machine langugae was simply too slow and tedious for most programmers. Assembly language was designed to be faster and easier to read and write. Assembly language is also more portable than machine language. Translator programs called assemblers were developed to convert early assembly-language programs to machine language at computer speeds"
+    },
+    {
+      "question": "What are usually needed at the beginning of a C++ file?",
+      "answer": " Common elements included at the beginning to provide necessary information and configurations for the compiler and to include standard libraries. \n Header files: that provide declarations for functions, classes, and other entities. For example: \n #include <iostream> // input and output stream function \n #include <cstdlib> // General-purpose functions \nusing namespace std; //indicate that you want to use the entire namespace in your code, eliminating the need to prefix standard entities with std::"
+    },
+    {
+      "question": "How to make a comment in C++",
+      "answer": "// This is a single-line comment. \n /* This is a \n multi-line comment. */"
+    },
+    {
+      "question": "What are the type of variables in C++",
+      "answer": "Integers: \n int: e.g. 0,1,-5. 32-bit size \n short: short integer like integer but 16-bit \n long: long integer 64-bit \n  "
+    },
+    {
+      "question": "what is an integer?",
+      "answer": "An integer is a whole number that does not have any fractional or decimal parts. Integers can be positive, negative, or zero."
+    },
+    {
+      "question": "what is usually included in a python file",
+      "answer": "Common elements included at the beginning to provide necessary information and configurations for the compiler and to include standard libraries. \n Header files: that provide declarations for functions, classes, and other entities. For example: \n #include <iostream> // input and output stream function \n #include <cstdlib> // General-purpose functions \nusing namespace std; //indicate that you want to use the entire namespace in your code, eliminating the need to prefix standard entities with std::"
+    },
+    {
+      "question": "what are the essential elements in c++ files?",
+      "answer": "header files such as iostream are needed at the beginning of c++ file"
+    },
+    {
+      "question": "how to make comment in C++ file?",
+      "answer": "// This is a single-line comment. \n /* This is a \n multi-line comment. */"
+    },
+    {
+      "question": "how tall are you?",
+      "answer": "I'm as tall as you want me to be"
+    },
+    {
+      "question": "what are you?",
+      "answer": "I'm Peter the chatbot"
+    },
+    {
+      "question": "how can you help me?",
+      "answer": "I can help with basic C++ questions ranging from definitions to simple coding example"
+    },
+    {
+      "question": "how long could you remember a conversion?",
+      "answer": "I am not equipped to have memories of conversation beside my own knowledge base"
+    },
+    {
+      "question": "do you know Justin Beiber?",
+      "answer": "ooh, the famous Canadian musician, yeah I don't know much about him"
+    },
+    {
+      "question": "who is justin beiber?",
+      "answer": "He is a famous Candian musician, known by songs like \"Baby, Beauty and the Beat, Intentions, etc.\""
+    },
+    {
+      "question": "what is // in c++?",
+      "answer": "// is used for a single line comment in C++"
+    },
+    {
+      "question": "what is /*",
+      "answer": "/* signals the end of a multiple lines comment"
+    },
+    {
+      "question": "/*",
+      "answer": "beginning of a multiple lines comment that ends with */"
+    },
+    {
+      "question": "*/",
+      "answer": "the end of a multiple lines comment that begins with /*"
+    },
+    {
+      "question": "how tall am I?",
+      "answer": "Sorry, I'm not equipped to remember individual's information"
+    },
+    {
+      "question": "i am",
+      "answer": "you are in a conversation with me, Peter the chatbot"
+    },
+    {
+      "question": "What is a database?",
+      "answer": "Database is a collection of data organized for easy access and manipulation"
+    },
+    {
+      "question": "what should be at the end of every line of codes in c++",
+      "answer": "; should be included at the end of every line of codes, except when including header files, if statements, functions' definitions"
+    },
+    {
+      "question": "how to declare a varible in c++?",
+      "answer": "to declare a variable, you could first put the data type such as int, float, char, bool then the name of the variable"
+    },
+    {
+      "question": "Im fine",
+      "answer": "Great! How can I help you today?"
+    }
+  ]
+}
